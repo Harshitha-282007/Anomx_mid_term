@@ -280,9 +280,3 @@ Stable trade volume (~27,612), slightly negative average PnL (−20.8, realistic
 4. **Class imbalance must be addressed.** Only 5.3% of events are anomalous. A model predicting "normal" for everything would be 94.7% accurate but completely useless. Precision, recall, and F1-score matter more than accuracy here.
 
 5. **EDA should always come before modeling.** The analysis revealed which features carry signal, which are redundant, and where bugs exist — all before writing a single line of model code.
-
----
-
-## What's Next — Week 5
-
-The `features.csv` dataset will be used to train anomaly detection models. Based on the EDA, the strongest candidates per fraud type are clear. The main challenge to address will be class imbalance — likely through techniques like class weighting, SMOTE, or threshold tuning on model outputs.
